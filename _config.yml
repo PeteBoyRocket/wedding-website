@@ -1,14 +1,14 @@
-title:            Site Title
-description:      Describe your website.
+title:            Diana & Lee
+description:      11/08/2014
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              http://localhost:4000
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Lee Mendelowitz
   avatar:         bio-photo.jpg
   bio:            "Describe your self."
-  email:          your@email.com
+  email:          Lee.Mendelowitz@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
   facebook:       
@@ -34,15 +34,18 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
+  - title: Welcome
     url: /about/
-  - title: Posts
+  - title: Proposal
     url: /posts/
-  - title: Theme Setup
+  - title: Ceremony and Reception
     url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
+  - title: Registries
+    url: /about/
+  - title: Guest Information
+    url: /about/
+  - title: Photo Gallery
+    url: /about/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
