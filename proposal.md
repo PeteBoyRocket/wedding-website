@@ -6,7 +6,7 @@ tagline:
 tags: []
 modified: 3-16-2014
 image:
-  feature: website_header_with_text.jpg
+  feature: website_header_6.jpg
 hide_author: true
 ---
 
