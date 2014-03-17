@@ -2480,8 +2480,8 @@ body {
 .image-wrap {
   position: relative;
   margin-bottom: 2em;
-  /*
-	&:after {
+  *zoom: 1;
+  /*&:after {
 		content: " ";
 		display: block;
 		position: absolute;
@@ -2497,8 +2497,31 @@ body {
 		@media @1382px {
 			left: 33.333333333%;
 		}
-	}*/
+		
+	}
+	*/
 
+}
+
+.image-wrap:before,
+.image-wrap:after {
+  display: table;
+  content: "";
+}
+
+.image-wrap:after {
+  clear: both;
+}
+
+.image-wrap:before,
+.image-wrap:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.image-wrap:after {
+  clear: both;
 }
 
 .image-wrap img {
@@ -3245,6 +3268,37 @@ body {
 .photo-gallery .image-wrapper {
   display: inline;
   margin: auto;
+}
+
+.countdown {
+  width: 100%;
+  margin: 0 auto;
+  margin: 1em auto;
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-align: center;
+  *zoom: 1;
+}
+
+.countdown:before,
+.countdown:after {
+  display: table;
+  content: "";
+}
+
+.countdown:after {
+  clear: both;
+}
+
+.countdown:before,
+.countdown:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.countdown:after {
+  clear: both;
 }
 
 /* custom definitions */

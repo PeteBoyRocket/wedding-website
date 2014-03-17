@@ -47,8 +47,11 @@ $(function() {
 // Add lightbox class to all image links
 $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
 
+
+
 // Magnific-Popup options
 $(document).ready(function() {
+
   $('.image-popup').magnificPopup({
     type: 'image',
     tLoading: 'Loading image #%curr%...',
@@ -65,4 +68,51 @@ $(document).ready(function() {
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-fade'
   });
+
+  // Setup countdown timer
+  var $countdown = $(".countdown");
+  if ($countdown.length > 0) {
+
+    var target = new Date(Date.parse('2014-11-08T00:00:00-05:00'));
+    var countdown_timer;
+
+    function countdown_callback() {
+    
+      var now = new Date();
+      var delta = (target - now); // in milliseconds
+      var days = delta/(3600.0*24.0*1000.0);
+      console.log("countdown tick. delta: ", delta, " days: ", days);
+
+
+      if (days > 0) {
+        var days_rounded = Math.ceil(days);
+        if (days_rounded == 1) {
+          $countdown.html("One day to go!");
+        } else {
+          $countdown.html(days_rounded + " days to go!");
+        }
+      } else if (days < 0 && days > -1) {
+        $countdown.html("It's wedding day!");
+      } else {
+        $countdown.html("");
+        window.clearInterval(countdown_timer);
+      }
+    }
+
+    countdown_timer = window.setInterval(countdown_callback, 30*1000.0);
+    countdown_callback();
+
+  }
+
+
+  /*
+  console.log("have countdown: ", $countdown);
+  $countdown.countdown("2014/11/08", function(event) {
+    console.log("countdown event: ", event);
+    $(this).html(event.strftime('%D days %H:%M:%S'));
+  });
+  */
+
+
+
 });
