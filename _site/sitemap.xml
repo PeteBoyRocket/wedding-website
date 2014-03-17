@@ -1,78 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website</loc>
     </url>
     
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/404.html</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/404.html</loc>
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/ceremony/</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/ceremony/</loc>
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/feed.xml</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/feed.xml</loc>
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/guest-information/</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/guest-information/</loc>
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/index.html</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/index.html</loc>
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/photos/</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/photos/</loc>
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/posts/</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/proposal/</loc>
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/proposal/</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/registries/</loc>
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/registries/</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/sitemap.xml</loc>
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/sitemap.xml</loc>
-    </url>
-    
-    <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/theme-setup/</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/theme-setup/</loc>
     </url>
     
 
-    
-    <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/code-highlighting-post/</loc>
-    </url>
-    
-    <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/readability-feature-post/</loc>
-    </url>
-    
-    <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/sample-post-images/</loc>
-    </url>
-    
-    <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/ceremony-and-reception/</loc>
-    </url>
-    
-    <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/readability-post/</loc>
-    </url>
-    
-    <url>
-        <loc>http://leemendelowitz.github.io/minimal-mistakes/sample-post/</loc>
-    </url>
     
 </urlset>
