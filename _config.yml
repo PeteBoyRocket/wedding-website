@@ -1,5 +1,6 @@
 title:            Diana & Lee
 description:      11/08/2014
+
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              http://localhost:4000
 
@@ -34,18 +35,16 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Welcome
-    url: /about/
-  - title: Proposal
-    url: /posts/
   - title: Ceremony and Reception
-    url: /theme-setup/
-  - title: Registries
-    url: /about/
+    url: /ceremony/
   - title: Guest Information
-    url: /about/
+    url: /guest-information/
+  - title: Registry
+    url: /registries/
+  - title: Proposal
+    url: /proposal/
   - title: Photo Gallery
-    url: /about/
+    url: /photos/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
@@ -71,4 +70,4 @@ kramdown:
     coderay_css: class
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "photoshop", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

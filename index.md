@@ -1,9 +1,7 @@
 ---
 layout: home
-description: "A responsive Jekyll theme with editorial tendencies by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+description: "Lee & Diana's Wedding Website"
+tags: []
 image:
-  feature: website_header_2.png
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature: website_header_with_text.jpg
 ---
