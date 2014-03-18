@@ -360,7 +360,7 @@ Index: assets/css/main.prefixed.css
  }
  
  #ceremony-location {
-@@ -3258,15 +3221,30 @@
+@@ -3260,15 +3223,30 @@
  
    display: -moz-flex;
    display: flex;
@@ -391,7 +391,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .photo-gallery img {
-@@ -3283,8 +3261,9 @@
+@@ -3285,8 +3263,9 @@
  .photo-gallery img:hover {
    /*border-color: lighten(@border-color, 10%)*/
  
@@ -401,7 +401,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .photo-gallery .image-wrapper {
-@@ -3458,8 +3437,9 @@
+@@ -3472,8 +3451,9 @@
    display: block;
    width: auto;
    height: auto;
@@ -411,7 +411,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-ajax-cur {
-@@ -3490,8 +3470,9 @@
+@@ -3504,8 +3484,9 @@
  .mfp-preloader,
  .mfp-counter {
    -webkit-user-select: none;
@@ -421,7 +421,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-loading.mfp-figure {
-@@ -3612,11 +3593,8 @@
+@@ -3626,11 +3607,8 @@
    white-space: nowrap;
    background-color: #111111;
    opacity: 0.65;
@@ -433,7 +433,7 @@ Index: assets/css/main.prefixed.css
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
  }
  
-@@ -3660,22 +3638,17 @@
+@@ -3674,22 +3652,17 @@
  }
  
  .mfp-arrow-left {
@@ -456,7 +456,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-arrow-left:after,
-@@ -3690,22 +3663,17 @@
+@@ -3704,22 +3677,17 @@
  }
  
  .mfp-arrow-right {
@@ -479,7 +479,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-arrow-right:after,
-@@ -3744,8 +3712,9 @@
+@@ -3758,8 +3726,9 @@
    display: block;
    width: 100%;
    height: 100%;
@@ -489,7 +489,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-iframe-holder .mfp-close {
-@@ -3779,8 +3748,9 @@
+@@ -3793,8 +3762,9 @@
    display: block;
    width: auto;
    height: auto;
@@ -499,7 +499,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-figure {
-@@ -3874,16 +3844,19 @@
+@@ -3888,16 +3858,19 @@
  
  @media all and (max-width: 800px) {
    .mfp-arrow {
@@ -519,7 +519,7 @@ Index: assets/css/main.prefixed.css
    }
    .mfp-container {
      padding-right: 6px;
-@@ -3925,49 +3898,37 @@
+@@ -3939,49 +3912,37 @@
  
  .mfp-fade .zoom-anim-dialog {
    opacity: 0;
@@ -569,7 +569,7 @@ Index: assets/css/main.prefixed.css
  }
  
  /* animate in */
-@@ -3990,9 +3951,11 @@
+@@ -4004,9 +3965,11 @@
      color: black !important;
      text-shadow: none !important;
      background: transparent !important;
@@ -581,7 +581,7 @@ Index: assets/css/main.prefixed.css
    }
    @page  {
      margin: 0.5cm;
-@@ -4036,5 +3999,6 @@
+@@ -4050,5 +4013,6 @@
    }
    tr {
      page-break-inside: avoid;

@@ -3207,6 +3207,8 @@ body {
 }
 
 .photo-gallery {
+  /* Flex Settings */
+
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
 
@@ -3269,6 +3271,18 @@ body {
 .photo-gallery .image-wrapper {
   display: inline;
   margin: auto;
+}
+
+/* Firefox does not support flex-wrap until 28 */
+
+@supports (not (flex-wrap: wrap)) {
+  .photo-gallery {
+    display: inline-block;
+  }
+  .photo-gallery img {
+    display: inline-block;
+    margin: 20px;
+  }
 }
 
 /* Styles for the countdown */

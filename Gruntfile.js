@@ -110,7 +110,31 @@ module.exports = function(grunt) {
         'assets/css/main.min.css',
         'assets/js/scripts.min.js'
       ]
-    }
+    },
+    jekyll: {                               // Task
+      options: {                            // Universal options
+          bundleExec: false
+      },
+      dist: {                             // Target
+        options: {                           // Target options
+          config: './_config.yml'
+        }
+      },
+      serve_dev: {
+        options: {                           // Target options
+          config: '_config.yml,_config_dev.yml',
+          server_port: 4000,
+          serve: true,
+          dest: './_dev_build'
+        }
+      },
+      build_dev: {                               // Another target
+        options: {
+          config: '_config.yml,_config_dev.yml',
+          dest: './_dev_build'
+        }
+      }
+  }
   });
 
   // Load tasks
@@ -123,6 +147,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-jekyll');
 
   // Register tasks
   grunt.registerTask('default', [
@@ -132,11 +157,12 @@ module.exports = function(grunt) {
     'cssmin',
     'uglify',
     'imagemin',
-    'svgmin'
+    'svgmin',
+    'jekyll:dist'
   ]);
 
   grunt.registerTask('css', ['recess:dist', 'autoprefixer:css', 'cssmin:css']);
-
+  grunt.registerTask('jekyll-dev', ['jekyll:build_dev', 'jekyll:serve_dev'])
   grunt.registerTask('dev', [
     'watch'
   ]);
