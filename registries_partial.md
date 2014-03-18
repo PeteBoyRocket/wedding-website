@@ -1,6 +1,6 @@
 ---
-layout: page_angular
-permalink: registries/
+layout: page_partial
+permalink: /registries_partial.html
 title: Registries
 tagline: 
 tags: []

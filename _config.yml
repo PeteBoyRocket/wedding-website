@@ -36,15 +36,15 @@ bing_verify:
 # For external links add external: true
 links:
   - title: Ceremony and Reception
-    url: /ceremony/
+    url: ceremony
   - title: Guest Information
-    url: /guest-information/
+    url: guest-information
   - title: Registry
-    url: /registries/
+    url: registries
   - title: Proposal
-    url: /proposal/
+    url: proposal
   - title: Photo Gallery
-    url: /photos/
+    url: photos
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York

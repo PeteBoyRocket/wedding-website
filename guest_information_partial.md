@@ -1,6 +1,6 @@
 ---
-layout: page_angular
-permalink: guest_information/
+layout: page_partial
+permalink: /guest_information_partial.html
 title: Guest Information
 tagline: 
 tags: []

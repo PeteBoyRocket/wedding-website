@@ -2020,6 +2020,12 @@ select:focus {
 /* Page level layout styles ================================ */
 
 body {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
   font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
   font-color: #333332;
@@ -3270,6 +3276,8 @@ body {
   margin: auto;
 }
 
+/* Styles for the countdown */
+
 .countdown {
   width: 100%;
   margin: 0 auto;
@@ -3299,6 +3307,59 @@ body {
 
 .countdown:after {
   clear: both;
+}
+
+/* Animation styles for ng-view */
+
+.view-animate-container {
+  position: relative;
+  /*
+  height:100px!important;
+  position:relative;
+  background:white;
+  border:1px solid black;
+  height:40px;
+  overflow:hidden;
+  */
+
+}
+
+.view-animate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+.view-animate.ng-enter,
+.view-animate.ng-leave {
+  /*
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;*/
+
+  display: block;
+  width: 100%;
+}
+
+.view-animate.ng-enter {
+  opacity: 0.0;
+  -webkit-transition: all 0.75s 0.0s;
+          transition: all 0.75s 0.0s;
+}
+
+.view-animate.ng-leave {
+  opacity: 1.0;
+  -webkit-transition: all  0.75s 0.0s;
+          transition: all  0.75s 0.0s;
+}
+
+.view-animate.ng-enter.ng-enter-active {
+  opacity: 1.0;
+}
+
+.view-animate.ng-leave.ng-leave-active {
+  opacity: 0.0;
 }
 
 /* custom definitions */

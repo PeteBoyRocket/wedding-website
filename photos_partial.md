@@ -1,6 +1,6 @@
 ---
-layout: page_angular
-permalink: photos/
+layout: page_partial
+permalink: /photos_partial.html
 title: Photo Gallery
 tagline: 
 tags: []

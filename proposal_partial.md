@@ -1,6 +1,6 @@
 ---
-layout: page_angular
-permalink: proposal/
+layout: page_partial
+permalink: /proposal_partial.html
 title: Proposal
 tagline: 
 tags: []

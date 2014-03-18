@@ -76,7 +76,7 @@ $(document).ready(function() {
     var target = new Date(Date.parse('2014-11-08T00:00:00-05:00'));
     var countdown_timer;
 
-    function countdown_callback() {
+    var countdown_callback = function() {
     
       var now = new Date();
       var delta = (target - now); // in milliseconds
@@ -86,7 +86,7 @@ $(document).ready(function() {
 
       if (days > 0) {
         var days_rounded = Math.ceil(days);
-        if (days_rounded == 1) {
+        if (days_rounded === 1) {
           $countdown.html("One day to go!");
         } else {
           $countdown.html(days_rounded + " days to go!");
@@ -97,21 +97,13 @@ $(document).ready(function() {
         $countdown.html("");
         window.clearInterval(countdown_timer);
       }
-    }
+    };
 
     countdown_timer = window.setInterval(countdown_callback, 30*1000.0);
     countdown_callback();
 
   }
 
-
-  /*
-  console.log("have countdown: ", $countdown);
-  $countdown.countdown("2014/11/08", function(event) {
-    console.log("countdown event: ", event);
-    $(this).html(event.strftime('%D days %H:%M:%S'));
-  });
-  */
 
 
 

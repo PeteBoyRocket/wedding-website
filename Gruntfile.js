@@ -17,10 +17,10 @@ module.exports = function(grunt) {
       dist: {
         options: {
           compile: true,
-          compress: true
+          compress: false
         },
         files: {
-          'assets/css/main.min.css': [
+          'assets/css/main.css': [
             'assets/less/main.less'
           ]
         }
@@ -37,6 +37,26 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    autoprefixer: {
+      options: {
+        diff: true,
+        map: true,
+        browsers: ['last 2 versions', 'ie 8', 'ie 9', '> 1%', 'ff > 20', 'Android 4']
+      },
+      css: {
+        src: 'assets/css/main.css',
+        dest: 'assets/css/main.prefixed.css'
+      }
+    },
+
+    cssmin: {
+      css: {
+        src: 'assets/css/main.prefixed.css',
+        dest: 'assets/css/main.min.css'
+      }
+    },
+
     uglify: {
       dist: {
         files: {
@@ -101,15 +121,22 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Register tasks
   grunt.registerTask('default', [
     'clean',
     'recess',
+    'autoprefixer',
+    'cssmin',
     'uglify',
     'imagemin',
     'svgmin'
   ]);
+
+  grunt.registerTask('css', ['recess:dist', 'autoprefixer:css', 'cssmin:css']);
+
   grunt.registerTask('dev', [
     'watch'
   ]);

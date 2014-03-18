@@ -10,7 +10,11 @@
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/wedding-website/ceremony/</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/ceremony_partial/</loc>
+    </url>
+    
+    <url>
+        <loc>http://leemendelowitz.github.io/wedding-website/ceremony_partial.html</loc>
     </url>
     
     <url>
@@ -18,7 +22,15 @@
     </url>
     
     <url>
-        <loc>http://leemendelowitz.github.io/wedding-website/guest-information/</loc>
+        <loc>http://leemendelowitz.github.io/wedding-website/guest_information/</loc>
+    </url>
+    
+    <url>
+        <loc>http://leemendelowitz.github.io/wedding-website/guest_information_partial.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://leemendelowitz.github.io/wedding-website/home_partial.html</loc>
     </url>
     
     <url>
@@ -30,11 +42,23 @@
     </url>
     
     <url>
+        <loc>http://leemendelowitz.github.io/wedding-website/photos_partial.html</loc>
+    </url>
+    
+    <url>
         <loc>http://leemendelowitz.github.io/wedding-website/proposal/</loc>
     </url>
     
     <url>
+        <loc>http://leemendelowitz.github.io/wedding-website/proposal_partial.html</loc>
+    </url>
+    
+    <url>
         <loc>http://leemendelowitz.github.io/wedding-website/registries/</loc>
+    </url>
+    
+    <url>
+        <loc>http://leemendelowitz.github.io/wedding-website/registries_partial.html</loc>
     </url>
     
     <url>
