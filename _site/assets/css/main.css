@@ -2020,12 +2020,6 @@ select:focus {
 /* Page level layout styles ================================ */
 
 body {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  bottom: 0;
-  left: 0;
-  overflow-y: auto;
   font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
   font-color: #333332;

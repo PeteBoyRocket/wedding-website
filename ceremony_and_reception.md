@@ -1,6 +1,6 @@
 ---
 layout: page_angular
-permalink: ceremony_partial/
+permalink: ceremony/
 title: Ceremony & Reception
 tagline: 
 tags: []

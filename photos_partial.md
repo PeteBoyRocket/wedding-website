@@ -11,7 +11,7 @@ hide_author: true
 number_of_images: 47
 ---
 
-<div class="photo-gallery">
+<div class="photo-gallery" magnific-popup-gallery>
 
 
 {% for i in (1..page.number_of_images) %}

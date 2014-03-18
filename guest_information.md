@@ -1,6 +1,6 @@
 ---
 layout: page_angular
-permalink: guest_information/
+permalink: guest-information/
 title: Guest Information
 tagline: 
 tags: []

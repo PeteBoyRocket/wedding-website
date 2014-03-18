@@ -11,17 +11,17 @@ hide_author: true
 number_of_images: 47
 ---
 
-<div class="photo-gallery">
+<div class="photo-gallery" magnific-popup-gallery>
 
+  {% for i in (1..page.number_of_images) %}
 
-{% for i in (1..page.number_of_images) %}
+    {% capture image_name %}web_gallery{{ i | pad_zero }}.jpg{% endcapture %}
+    {% capture image_url %}{{ site.url }}/images/{{ image_name }}{% endcapture %}
 
-  {% capture image_name %}web_gallery{{ i | pad_zero }}.jpg{% endcapture %}
-  {% capture image_url %}{{ site.url }}/images/{{ image_name }}{% endcapture %}
+    <div class="image-wrapper">
 
-  <div class="image-wrapper">
-  <a href="{{ image_url }}"><img src="{{ image_url }}" class="clearfix"></a>  
-  </div>
-{% endfor %}
+    <a href="{{ image_url }}"><img src="{{ image_url }}" class="clearfix"></a>  
+    </div>
+  {% endfor %}
 
 </div>
