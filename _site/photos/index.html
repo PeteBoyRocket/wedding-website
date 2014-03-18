@@ -69,12 +69,17 @@
 
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
 
-<div class="navigation-wrapper">
+<div class="navigation-wrapper" ng-controller="NavController">
 	<div class="site-name">
 		<a href="http://dianaandlee.com/">Diana & Lee</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
+				<!-- http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/ -->
+				<button type="button" role="button" class="navtoogle lines-button x" ng-class="{'active': active}" ng-click="toggleActive()" aria-hidden="true">
+					<span class="lines"></span>Pages
+				</button>
+
 		    <ul>
 		        
 				<li><a href="http://dianaandlee.com/ceremony" >Ceremony and Reception</a></li>
@@ -88,6 +93,7 @@
 				<li><a href="http://dianaandlee.com/photos" >Photo Gallery</a></li>
 		        
 		    </ul>
+
 		</nav>
 	</div><!-- /.top-navigation -->
 </div><!-- /.navigation-wrapper -->
@@ -124,6 +130,22 @@ jQuery(document).ready( function() {
 
 </script>
 
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-49101113-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
   
 </body>

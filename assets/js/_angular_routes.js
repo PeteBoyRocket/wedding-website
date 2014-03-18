@@ -36,7 +36,20 @@ app.controller('MainCtrl', ['$scope', function($scope) {
 
 }]);
 
+app.controller('NavController', ['$scope', function($scope) {
 
+  $scope.active = false;
+
+  // Whenever the route changes, reset the page to the top.
+  $scope.$on('$routeChangeSuccess', function() {
+    $scope.active = false;
+  });
+
+  $scope.toggleActive = function() {
+    $scope.active = !$scope.active;
+  };
+
+}]);
 
 // Add a directive for magnificPopup
 app.directive("magnificPopupGallery", function() {
@@ -119,5 +132,22 @@ app.directive("weddingCountdown", ["$interval", function($interval) {
   };
 
 }]);
+
+app.directive("nagToggle", function() {
+
+  return {
+
+    restrict: 'E',
+    template: '<button type="button" role="button" id="menutoggle" class="navtoogle lines-button x" aria-hidden="true"><span class="lines"></span>Pages</button>',
+    scope: {},
+    link: function(scope, element, attrs) {
+
+
+    }
+
+  };
+
+});
+
 
 
