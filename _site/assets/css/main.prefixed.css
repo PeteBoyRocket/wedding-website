@@ -3208,13 +3208,33 @@ body {
 
 .photo-gallery {
   display: -webkit-box;
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+
   display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+
+  display: -webkit-flex;
+  /* NEW - Chrome */
+
+  display: -moz-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -moz-box-orient: horizontal;
+          -moz-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+     -moz-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -moz-box-pack: justify;
@@ -3230,9 +3250,12 @@ body {
 .photo-gallery img {
   max-width: 360px;
   max-height: 360px;
+  min-width: 200px;
   padding: 0;
   margin: 10px;
   border: 2px solid #333332;
+  -webkit-transition: width 0.7s ease-out;
+          transition: width 0.7s ease-out;
 }
 
 .photo-gallery img:hover {

@@ -360,19 +360,24 @@ Index: assets/css/main.prefixed.css
  }
  
  #ceremony-location {
-@@ -3243,11 +3206,25 @@
-   list-style-type: none;
- }
+@@ -3258,15 +3221,30 @@
  
- .photo-gallery {
-+  display: -webkit-box;
-+  display: -webkit-flex;
-+  display: -moz-box;
-+  display: -ms-flexbox;
+   display: -moz-flex;
    display: flex;
-+  -webkit-flex-flow: row wrap;
-+  -ms-flex-flow: row wrap;
-   flex-flow: row wrap;
+   -webkit-flex-wrap: wrap;
++          -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+   -webkit-flex-direction: row;
++          -webkit-box-orient: horizontal;
++          -webkit-box-direction: normal;
++          -moz-box-orient: horizontal;
++          -moz-box-direction: normal;
++          -ms-flex-direction: row;
+           flex-direction: row;
+   -webkit-flex-flow: row wrap;
+      -moz-flex-flow: row wrap;
++          -ms-flex-flow: row wrap;
+           flex-flow: row wrap;
 +  -webkit-box-pack: justify;
 +  -webkit-justify-content: space-between;
 +  -moz-box-pack: justify;
@@ -386,7 +391,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .photo-gallery img {
-@@ -3261,8 +3238,9 @@
+@@ -3283,8 +3261,9 @@
  .photo-gallery img:hover {
    /*border-color: lighten(@border-color, 10%)*/
  
@@ -396,7 +401,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .photo-gallery .image-wrapper {
-@@ -3436,8 +3414,9 @@
+@@ -3458,8 +3437,9 @@
    display: block;
    width: auto;
    height: auto;
@@ -406,7 +411,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-ajax-cur {
-@@ -3468,8 +3447,9 @@
+@@ -3490,8 +3470,9 @@
  .mfp-preloader,
  .mfp-counter {
    -webkit-user-select: none;
@@ -416,7 +421,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-loading.mfp-figure {
-@@ -3590,11 +3570,8 @@
+@@ -3612,11 +3593,8 @@
    white-space: nowrap;
    background-color: #111111;
    opacity: 0.65;
@@ -428,7 +433,7 @@ Index: assets/css/main.prefixed.css
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
  }
  
-@@ -3638,22 +3615,17 @@
+@@ -3660,22 +3638,17 @@
  }
  
  .mfp-arrow-left {
@@ -451,7 +456,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-arrow-left:after,
-@@ -3668,22 +3640,17 @@
+@@ -3690,22 +3663,17 @@
  }
  
  .mfp-arrow-right {
@@ -474,7 +479,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-arrow-right:after,
-@@ -3722,8 +3689,9 @@
+@@ -3744,8 +3712,9 @@
    display: block;
    width: 100%;
    height: 100%;
@@ -484,7 +489,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-iframe-holder .mfp-close {
-@@ -3757,8 +3725,9 @@
+@@ -3779,8 +3748,9 @@
    display: block;
    width: auto;
    height: auto;
@@ -494,7 +499,7 @@ Index: assets/css/main.prefixed.css
  }
  
  .mfp-figure {
-@@ -3852,16 +3821,19 @@
+@@ -3874,16 +3844,19 @@
  
  @media all and (max-width: 800px) {
    .mfp-arrow {
@@ -514,7 +519,7 @@ Index: assets/css/main.prefixed.css
    }
    .mfp-container {
      padding-right: 6px;
-@@ -3903,49 +3875,37 @@
+@@ -3925,49 +3898,37 @@
  
  .mfp-fade .zoom-anim-dialog {
    opacity: 0;
@@ -564,7 +569,7 @@ Index: assets/css/main.prefixed.css
  }
  
  /* animate in */
-@@ -3968,9 +3928,11 @@
+@@ -3990,9 +3951,11 @@
      color: black !important;
      text-shadow: none !important;
      background: transparent !important;
@@ -576,7 +581,7 @@ Index: assets/css/main.prefixed.css
    }
    @page  {
      margin: 0.5cm;
-@@ -4014,5 +3976,6 @@
+@@ -4036,5 +3999,6 @@
    }
    tr {
      page-break-inside: avoid;
