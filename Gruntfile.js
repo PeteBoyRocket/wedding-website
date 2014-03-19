@@ -162,7 +162,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('css', ['recess:dist', 'autoprefixer:css', 'cssmin:css']);
-  grunt.registerTask('jekyll-dev', ['jekyll:build_dev', 'jekyll:serve_dev'])
+  grunt.registerTask('jekyll-dev', ['jekyll:build_dev', 'jekyll:serve_dev']);
   grunt.registerTask('dev', [
     'watch'
   ]);

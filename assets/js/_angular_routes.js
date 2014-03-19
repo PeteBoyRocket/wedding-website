@@ -36,17 +36,41 @@ app.controller('MainCtrl', ['$scope', function($scope) {
 
 }]);
 
-app.controller('NavController', ['$scope', function($scope) {
+app.controller('NavController', ['$scope', '$location', function($scope, $location) {
 
+  $scope.$location = $location;
   $scope.active = false;
+  $scope.path = $location.path();
 
-  // Whenever the route changes, reset the page to the top.
+  // Whenever the route changes, set the navigation to be closed.
   $scope.$on('$routeChangeSuccess', function() {
     $scope.active = false;
+    $scope.path = $location.path(); 
   });
 
   $scope.toggleActive = function() {
     $scope.active = !$scope.active;
+  };
+
+  $scope.closeNav = function() {
+    $scope.active = false;
+  };
+
+  $scope.openNav = function() {
+    $scope.active = true;
+  };
+
+  // Add selected route 
+  $scope.getClass = function(path) {
+    
+    // Add leading "/" if necessary
+    path = (path[0] === '/' ? path : "/" + path);
+
+    if (path === $location.path()) {
+      return "selected";
+    }
+
+    return "";
   };
 
 }]);
@@ -87,8 +111,9 @@ app.directive("magnificPopupGallery", function() {
       });
     }
   };
-
 });
+
+
 
 // Wedding Countdown Timer.
 app.directive("weddingCountdown", ["$interval", function($interval) {
@@ -132,22 +157,4 @@ app.directive("weddingCountdown", ["$interval", function($interval) {
   };
 
 }]);
-
-app.directive("nagToggle", function() {
-
-  return {
-
-    restrict: 'E',
-    template: '<button type="button" role="button" id="menutoggle" class="navtoogle lines-button x" aria-hidden="true"><span class="lines"></span>Pages</button>',
-    scope: {},
-    link: function(scope, element, attrs) {
-
-
-    }
-
-  };
-
-});
-
-
 

@@ -2082,6 +2082,7 @@ body {
   margin-right: 8.333333333333334%;
   margin-bottom: 1em;
   margin-left: 8.333333333333334%;
+  font-family: 'Crafty Girls', 'Open Sans', sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
 }
@@ -2330,6 +2331,10 @@ body {
           transition: max-height 0.4s;
 }
 
+.nav a.selected {
+  color: #004b96;
+}
+
 #main {
   width: 100%;
   margin: 0 auto;
@@ -2394,7 +2399,8 @@ body {
   text-indent: 0;
 }
 
-#main article.hide-author {
+#main article.hide-author,
+#main article.no-author {
   display: inline;
   float: left;
   width: 100%;
@@ -2406,7 +2412,8 @@ body {
 }
 
 @media only screen and (min-width: 37.5em) {
-  #main article.hide-author {
+  #main article.hide-author,
+  #main article.no-author {
     display: inline;
     float: left;
     width: 91.66666666666667%;
@@ -2416,7 +2423,8 @@ body {
 }
 
 @media only screen and (min-width: 86.375em) {
-  #main article.hide-author {
+  #main article.hide-author,
+  #main article.no-author {
     display: inline;
     float: left;
     width: 83.33333333333334%;

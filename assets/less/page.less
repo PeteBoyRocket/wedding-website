@@ -34,6 +34,8 @@ body {
 	margin-bottom: 1em;
 	float: none;
 	display: block;
+	/*font-family: 'Permanent Marker', cursive;*/
+	font-family: @site-name-font;
 	.font-rem(24);
 	@media @600px {
 		.grid(12,2);
@@ -218,6 +220,12 @@ body {
 	transition: max-height .4s;
 }
 
+.nav a.selected {
+	
+	color: @nav-link-color-selected;
+	
+}
+
 #main {
 	counter-reset: captions;
 	.container();
@@ -243,7 +251,7 @@ body {
 			margin-top: 15px;
 		}
 	}
-	article.hide-author {
+	article.hide-author, article.no-author {
 		.container();
 		.grid(12,10);
 		.prefix(12,1);
