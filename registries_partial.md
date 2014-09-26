@@ -21,6 +21,14 @@ We have registered at the following places:
 <li><a rel="nofollow" target="_blank" href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=6728124"><img alt="Bed Bath &amp; Beyond" title="Bed Bath &amp; Beyond" src="http://content.registry.theknot.com.s3.amazonaws.com/retailerImage5aa4f7d5-2039-4f93-8c31-c70181031363.gif"></a>
 </li>
 
+{% capture yussel_logo %}{{ site.url }}/images/yussels_logo.jpg{% endcapture %}
+<li><a rel="nofollow" target="_blank" href="http://www.yusselsplace.com/gift-registry/diana-lee-11-8-14.html"><img alt="Yussel's Place" title="Yussel's Place" src="{{yussel_logo}}" style="width: 116px; height: auto;"></img></a>
+</li>
+
+
+<!-- <li><a rel="nofollow" target="_blank" href="http://www.yusselsplace.com/gift-registry/diana-lee-11-8-14.html">Yussel's Place Arts & Judaica</a>
+</li> -->
+
 </ul>
 
 </div>
